@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+       border-collapse: collapse;   
+      }
+      tbody td {
+       border: 1px solid #AAAAAA;   
+      }
+      td:nth-child(odd) {
+            background-color: #888888;    
+      }
+      tr:nth-child(3n) {
+            color: blue;   
+      }
+      tr:nth-child(3n+1) {
+            color: red;          
+      }
+      tr:nth-child(3n+2) {
+            color: green;
+      }
+      td:nth-child(4) {
+            font-style: italic; 
+      }  
+    </style>  
+    <body>
+      <table>
+        <tbody>
+          <tr>
+               <td rowspan="2">...</td>
+               <td colspan="2">...</td>
+               <td colspan="2">...</td>   
+          </tr>
+          <tr>  
+           <td rowspan="2">...</td>
+           <td colspan="2">...</td>
+           <td></td>   
+          </tr>
+          <tr>
+           <td>...</td>
+           <td rowspan="2">...</td>
+           <td colspan="2">...</td>   
+          </tr>
+          <tr>
+           <td>...</td>
+           <td>...</td>
+           <td rowspan="2">...</td>
+           <td>...</td>
+          </tr>
+          <tr>
+           <td>...</td>
+           <td>...</td>
+           <td>...</td>
+           <td>...</td>   
+          </tr>  
+        </tbody>   
+      </table>     
+    </body>  
+  </head>  
+</html>
