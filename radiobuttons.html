@@ -8,13 +8,34 @@
       <label for="geschlecht_w">Weiblich</label>
       <input type="radio" name="geschlecht" value="w" id="geschlecht_w">
       <!--<input type="checkbox" name="extraschleim" value="an"> -->
-      <select>zusatz[]
-        <option value="intelligent">intelligent</option>  
-        <option value="gutaussehend">gutaussehend</option>
-        <option value="nach Kaese riechend">nach Kaese riechend</option>
-        <option value="langweilig">langweilig</option>
-        <option value="wohlgeformt">wohlgeformt</option>
-        <option value="schmackhaft">schmackhaft</option>
+      <select name="zusatz" multiple size="5">zusatz[]
+            <optgroup label="The Good">
+                  <option value="intelligent">intelligent</option>  
+                  <option value="gutaussehend">gutaussehend</option>
+            </optgroup>      
+            <optgroup label="The Bad">      
+                  <option value="nach Kaese riechend">nach Kaese riechend</option>
+                  <option value="langweilig">langweilig</option>
+            </optgroup>      
+            <optgroup label="And The Creepy">
+                  <option value="wohlgeformt">wohlgeformt</option>
+                  <option value="schmackhaft">schmackhaft</option>
+            </optgroup>      
+            <p>Hier eine Datenliste</p>
+                  <input type="text" list="adjektive" name="zusatz">
+                  <datalist id="adjektive">
+                        <option value="philipp"></option>
+                        <option value="papagei"></option>
+                        <option value="anthony"></option>
+                        <option value="ara"></option>
+                        <option value="intelligent"></option>
+                        <option value="isabel"></option>
+                        <option value="gutaussehend"></option>
+                        <option value="georg"></option>
+                        <option value="ronny"></option>
+                        <option value="robbe"></option>
+                        <option value="dumm"></option>
+                  </datalist>        
       </select>  
     </body>  
   </head>  
