@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input:focus{
+       border: 2px solid blue;   
+      }
+      input[pattern] {
+       border: 2px solid #BBBBFF;   
+      }
+      input[type="text"] {
+       color: blue;
+      }
+      input{
+       color: black;   
+      }  
+      input[type="email"]{
+       border: 2px solid #FFBBBB;   
+      }
+    </style>  
+    <body>
+      <p></p>
+      <input type="text" name="text1">
+      <p></p>
+      <input type="text" name="pattern" pattern="a-z"*>
+      <p></p>
+      <input type="email" name="email">  
+    </body>  
+  </head>  
+</html>
